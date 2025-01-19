@@ -1,3 +1,4 @@
+package model;
 public class accidenteVehicular  extends Emergencia{
     public int nunDeVehiculosInvolucrados;
 

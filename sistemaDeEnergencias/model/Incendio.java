@@ -1,3 +1,4 @@
+package model;
 public class Incendio  extends Emergencia{
     public  String tipoIncendio;
 

@@ -1,3 +1,6 @@
+package model.services;
+import model.Emergencia;
+
 public class Policia implements Responder{
 
     private int recursosDisponibles; // Número de camiones disponibles
