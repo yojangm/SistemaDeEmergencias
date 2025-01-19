@@ -1,9 +1,7 @@
 package utils;
 
-public enum tipoEmergencia {
-
+public enum TipoEmergencia {
     ACCIDENTEVEHICULAR,
     ROBO,
-    INCENDIO,
-
+    INCENDIO;
 }

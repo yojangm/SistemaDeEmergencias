@@ -1,11 +1,13 @@
 package model;
-import utils.tipoEmergencia;
+
+import utils.NivelGravedad;
+
 public class accidenteVehicular  extends Emergencia{
    
 
     // Constructor
-    public accidenteVehicular(String direccion, String telefono, String fecha, String gravedad, int nunDeVehiculosInvolucrados) {
-        super( "Accidente_Vehicular", direccion, telefono, fecha, gravedad);
+    public accidenteVehicular(String direccion, String telefono, String fecha, NivelGravedad nivelGravedad, int nunDeVehiculosInvolucrados) {
+        super( "AccidenteVehicular", direccion, telefono, fecha, nivelGravedad);
         
     }
 
