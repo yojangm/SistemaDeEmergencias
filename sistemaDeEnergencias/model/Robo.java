@@ -1,11 +1,13 @@
 package model;
-import utils.tipoEmergencia;
+
+import utils.NivelGravedad;
+
 public class Robo  extends Emergencia{
   
 
     // Constructor
-    public Robo( String direccion, String telefono, String fecha, String gravedad) {
-        super("Robo", direccion, telefono, fecha, gravedad);
+    public Robo( String direccion, String telefono, String fecha, NivelGravedad nivelGravedad) {
+        super("Robo", direccion, telefono, fecha, nivelGravedad);
      
     }
 

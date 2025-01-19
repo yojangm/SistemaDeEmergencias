@@ -1,18 +1,22 @@
 package model;
+
+
+import utils.NivelGravedad;
+
 public class Emergencia {
    public  String tipoEmergencia;
    private String direccion;
    public  String telefono;
    public  String fecha;
-   public  String gravedad;
+   private NivelGravedad nivelGravedad;
    
    // metodo constructor
-   public Emergencia(String tipoEmergencia, String direccion, String telefono, String fecha, String gravidad) {
+   public Emergencia(String tipoEmergencia, String direccion, String telefono, String fecha, NivelGravedad nivelGravedad) {
       this.tipoEmergencia = tipoEmergencia;
       this.direccion = direccion;
       this.telefono = telefono;
       this.fecha = fecha;
-      this.gravedad = gravidad;
+      this.nivelGravedad = nivelGravedad;
    }
 
    
@@ -50,12 +54,12 @@ public class Emergencia {
         this.fecha = fecha;
     }
 
-    public String getGravidad() {
-        return gravedad;
+    public NivelGravedad getNivelGravedad() {
+        return nivelGravedad;
     }
 
-    public void setGravidad(String gravedad) {
-        this.gravedad = gravedad;
+    public void setNivelGravedad(NivelGravedad nivelGravedad) {
+        this.nivelGravedad = nivelGravedad;
     }
 
     public void mostrarInformacionEmergencia() {
@@ -63,7 +67,7 @@ public class Emergencia {
         System.out.println("Direccion: " + direccion);
         System.out.println("Telefono: " + telefono);
         System.out.println("Fecha: " + fecha);
-        System.out.println("Gravedad: " + gravedad);
+        System.out.println("Gravedad: " + nivelGravedad);
     }
 
    
