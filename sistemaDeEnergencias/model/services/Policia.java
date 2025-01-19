@@ -16,7 +16,7 @@ public class Policia implements Responder{
         if ("Incendio".equalsIgnoreCase(emergencia.getTipoEmergencia())) {
             if (recursosDisponibles > 0) {
                 System.out.println("Policias atendiendo un " + emergencia.getTipoEmergencia() + " en " + emergencia.getDireccion());
-                System.out.println("Gravedad: " + emergencia.getGravidad());
+                System.out.println("Gravedad: " + emergencia.getNivelGravedad());
                 recursosDisponibles--; // Reducir recursos después de asignarlos
             } else {
                 System.out.println("No hay recursos disponibles para atender esta emergencia.");
