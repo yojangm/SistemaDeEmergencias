@@ -1,3 +1,6 @@
+package model.services;
+import model.Emergencia;
+
 public class Ambulancia implements Responder{
     private int recursosDisponibles; // Número de ambulancias disponibles
     private String ubicacion; // Ubicación actual de la estación de bomberos

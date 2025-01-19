@@ -1,3 +1,4 @@
+package model;
 public class Robo  extends Emergencia{
     public String tipoRobo;
 

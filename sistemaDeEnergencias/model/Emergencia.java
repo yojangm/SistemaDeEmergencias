@@ -1,3 +1,4 @@
+package model;
 public class Emergencia {
    public  String tipoEmergencia;
    private String direccion;
