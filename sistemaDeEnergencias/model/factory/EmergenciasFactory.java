@@ -1,6 +1,5 @@
 package model.factory;
 
-
 import model.Emergencia;
 import model.accidenteVehicular;
 import model.Incendio;
