@@ -2,16 +2,17 @@ package model;
 
 
 import utils.NivelGravedad;
+import utils.TipoEmergencia;
 
 public class Emergencia {
-   public  String tipoEmergencia;
+   public  TipoEmergencia tipoEmergencia;
    private String direccion;
    public  String telefono;
    public  String fecha;
    private NivelGravedad nivelGravedad;
    
    // metodo constructor
-   public Emergencia(String tipoEmergencia, String direccion, String telefono, String fecha, NivelGravedad nivelGravedad) {
+   public Emergencia(TipoEmergencia tipoEmergencia, String direccion, String telefono, String fecha, NivelGravedad nivelGravedad) {
       this.tipoEmergencia = tipoEmergencia;
       this.direccion = direccion;
       this.telefono = telefono;
@@ -22,11 +23,11 @@ public class Emergencia {
    
    // metodos accesores
 
-    public String getTipoEmergencia() {
+    public TipoEmergencia getTipoEmergencia() {
         return tipoEmergencia;
     }
 
-    public void setTipoEmergencia(String tipoEmergencia) {
+    public void setTipoEmergenci(TipoEmergencia tipoEmergencia) {
         this.tipoEmergencia = tipoEmergencia;
     }
 

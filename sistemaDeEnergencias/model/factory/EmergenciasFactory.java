@@ -9,15 +9,15 @@ import utils.NivelGravedad;
 
 public class EmergenciasFactory {
 
-    public static Emergencia crearEmergencia(TipoEmergencia tipo, String direccion, String telefono, String fecha, NivelGravedad nivelGravedad,int nunDeVehiculosInvolucrados) {
+    public static Emergencia crearEmergencia(TipoEmergencia tipoEmergencia, String direccion, String telefono, String fecha, NivelGravedad nivelGravedad,int nunDeVehiculosInvolucrados) {
 
-        switch (tipo) {
+        switch (tipoEmergencia) {
             case ACCIDENTEVEHICULAR:
-                return new accidenteVehicular(direccion, telefono, fecha, nivelGravedad, nunDeVehiculosInvolucrados);
+                return new accidenteVehicular(tipoEmergencia, direccion, telefono, fecha, nivelGravedad, nunDeVehiculosInvolucrados);
             case ROBO:
-                return new Robo(direccion, telefono, fecha, nivelGravedad);
+                return new Robo(tipoEmergencia, direccion, telefono, fecha, nivelGravedad);
             case INCENDIO:
-                return new Incendio(direccion, telefono, fecha, nivelGravedad);
+                return new Incendio(tipoEmergencia, direccion, telefono, fecha, nivelGravedad);
             default:
                 return null;
         }

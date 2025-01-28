@@ -1,5 +1,6 @@
 package model.services;
 import model.Emergencia;
+import utils.TipoEmergencia;
 
 public class Bomberos implements Responder{
 
@@ -13,7 +14,7 @@ public class Bomberos implements Responder{
     }
     @Override
     public void atenderEmergencia(Emergencia emergencia) {
-        if ("Incendio".equalsIgnoreCase(emergencia.getTipoEmergencia())) {
+        if (TipoEmergencia.INCENDIO.equals(emergencia.getTipoEmergencia())) {
             if (recursosDisponibles > 0) {
                 System.out.println("Bomberos atendiendo un " + emergencia.getTipoEmergencia() + " en " + emergencia.getDireccion());
                 System.out.println("Gravedad: " + emergencia.getNivelGravedad());
